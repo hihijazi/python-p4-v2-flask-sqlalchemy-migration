@@ -19,3 +19,31 @@ class Employee(db.Model):
 
     def __repr__(self):
         return f'<Employee {self.id}, {self.name}, {self.salary}>'
+
+class Department(db.Model):
+    __tablename__ = 'departments'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String, nullable=False)
+    address = db.Column(db.String)
+
+    def __repr__(self):
+        return f'<Department {self.id}, {self.name}, {self.address}>'
+This tool needs to be loaded in a new browser window
+The following content is partner provided
+
+The preceding content is partner provided
+Have specific feedback?
+Tell us here!Links to an external site.
+10:16
+
+1.1×
+voice selected
+
+
+
+
+
+
+
+
